@@ -132,9 +132,10 @@ app_license = "mit"
 # -----------
 # Permissions evaluated in scripted ways
 
-# permission_query_conditions = {
+permission_query_conditions = {
 # 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
-# }
+    "Patient Appointment": "clinic_management.permissions.get_appointment_conditions"
+}
 #
 # has_permission = {
 # 	"Event": "frappe.desk.doctype.event.event.has_permission",
@@ -155,23 +156,23 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
 # 	"all": [
 # 		"clinic_management.tasks.all"
 # 	],
 # 	"daily": [
 # 		"clinic_management.tasks.daily"
 # 	],
-# 	"hourly": [
-# 		"clinic_management.tasks.hourly"
-# 	],
+	"hourly": [
+		"clinic_management.tasks.auto_close_past_appointments"
+	],
 # 	"weekly": [
 # 		"clinic_management.tasks.weekly"
 # 	],
 # 	"monthly": [
 # 		"clinic_management.tasks.monthly"
 # 	],
-# }
+}
 
 # Testing
 # -------

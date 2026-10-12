@@ -1,0 +1,12 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<div>
+    <h2>{{ doc.first_name }} {{ doc.last_name }}</h2>
+    <p>{{ doc.specialization }}</p>
+    <p><strong>Consultation Fee:</strong> ${{ doc.consultation_fee }}</p>
+    <a href="/book-appointment?doctor={{ doc.name }}">Schedule Appointment</a>
+</div>
+{% endblock %}
+
+<!-- this is a sample default web page template -->

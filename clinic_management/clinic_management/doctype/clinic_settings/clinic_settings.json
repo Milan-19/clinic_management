@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "creation": "2026-10-05 17:27:15.575661",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "default_consultation_fee",
+  "emergency_contact_phone"
+ ],
+ "fields": [
+  {
+   "default": "50",
+   "fieldname": "default_consultation_fee",
+   "fieldtype": "Currency",
+   "label": "Default Consultation Fee"
+  },
+  {
+   "fieldname": "emergency_contact_phone",
+   "fieldtype": "Phone",
+   "label": "Emergency Contact Phone"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-10-05 17:28:42.485544",
+ "modified_by": "Administrator",
+ "module": "Clinic Management",
+ "name": "Clinic Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

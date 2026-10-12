@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-09-30 17:38:44.995924",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "medicine_name",
+  "dosage",
+  "duration_days"
+ ],
+ "fields": [
+  {
+   "fieldname": "medicine_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Medicine Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dosage",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Dosage",
+   "options": "1-0-1\n1-1-1\n0-0-1\n1-0-0"
+  },
+  {
+   "default": "5",
+   "fieldname": "duration_days",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Duration (Days)"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-30 18:04:53.256977",
+ "modified_by": "Administrator",
+ "module": "Clinic Management",
+ "name": "Prescription Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
