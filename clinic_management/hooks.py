@@ -11,15 +11,15 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "clinic_management",
-# 		"logo": "/assets/clinic_management/logo.png",
-# 		"title": "Clinic Management",
-# 		"route": "/clinic_management",
-# 		"has_permission": "clinic_management.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "clinic_management",
+		"logo": "/assets/clinic_management/images/logo.png",
+		"title": "Clinic Management",
+		"route": "/desk/clinic",
+		# "has_permission": "clinic_management.api.permission.has_app_permission"
+	}
+]
 
 # Includes in <head>
 # ------------------
